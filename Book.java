@@ -17,9 +17,6 @@ public class Book {
     }
 
     // Getters and setters
-    // Include getters for title, author, year, pages, category, and isOnLoan
-    // Include setters for category and isOnLoan
-
     public String getTitle() {
         return title;
     }
@@ -40,10 +37,6 @@ public class Book {
         return category;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     public boolean isOnLoan() {
         return isOnLoan;
     }
@@ -52,6 +45,16 @@ public class Book {
         isOnLoan = onLoan;
     }
 
-    // Additional methods can be included here if necessary
-
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", publicationYear=" + publicationYear +
+                ", pages=" + pages +
+                ", category='" + category + '\'' +
+                ", isOnLoan=" + isOnLoan +
+                '}';
+    }
 }
+
